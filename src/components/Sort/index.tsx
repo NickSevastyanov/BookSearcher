@@ -5,7 +5,7 @@ import { useAppDispatch } from '../../redux/store';
 import { setSort } from '../../redux/filter/slice';
 
 const Sort: React.FC = () => {
-  const sortList: string[] = ['relevance', 'newest'];
+  const sortList: string[] = ['newest', 'relevance'];
 
   const dispatch = useAppDispatch();
   const { sort } = useSelector(selectFilter);

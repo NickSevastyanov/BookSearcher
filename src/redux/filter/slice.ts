@@ -4,7 +4,7 @@ import { IFilterSliceState } from './types';
 const initialState: IFilterSliceState = {
   searchValue: '',
   category: 'all',
-  sort: 'relevance',
+  sort: 'newest',
 };
 
 const filters = createSlice({
