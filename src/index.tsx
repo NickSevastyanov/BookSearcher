@@ -19,4 +19,3 @@ if (rootElem) {
   );
 }
 
-//key = AIzaSyAF_ITjrjO9yk9l1yNS9nQTLF4zIq4KiNs

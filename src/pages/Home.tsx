@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const { items, totalItems, status } = useSelector(selectbooksData);
 
   const handleLoadMore = () => {
-    setVisible((prev) => prev + 10);
+    setVisible((prev) => prev + 30);
   };
 
   const books =
