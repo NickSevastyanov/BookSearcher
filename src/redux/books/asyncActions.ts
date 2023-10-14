@@ -2,9 +2,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { IBooksSliceState, SearchbooksParams } from './types';
 
-
-
-
 export const fetchbooks = createAsyncThunk<IBooksSliceState, SearchbooksParams>(
   'books/fetchbooksStatus',
   async ({ search, category, sort }) => {

@@ -34,8 +34,8 @@ const Home: React.FC = () => {
           <div className="ContentContainer">{status === 'loading' ? skeletons : books}</div>
         )}
       </div>
-      {totalItems > 0 && (
-        <div className='loadmore'>
+      {status === 'success' && (
+        <div className="loadmore">
           <button onClick={handleLoadMore}>Load more</button>
         </div>
       )}

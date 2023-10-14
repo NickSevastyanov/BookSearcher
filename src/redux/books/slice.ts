@@ -4,15 +4,14 @@ import { IBooksSliceState } from './types';
 
 const initialState: IBooksSliceState = {
   totalItems: 0,
-  items: [],  
+  items: [],
   status: '', // loading | success | error
 };
 
 const books = createSlice({
   name: 'books',
   initialState,
-  reducers: {    
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchbooks.pending, (state, action) => {
       state.status = 'loading';
@@ -20,7 +19,7 @@ const books = createSlice({
 
     builder.addCase(fetchbooks.fulfilled, (state, action) => {
       state.totalItems = action.payload.totalItems;
-      state.items = action.payload.items
+      state.items = action.payload.items;
       state.status = 'success';
     });
 
@@ -29,6 +28,5 @@ const books = createSlice({
     });
   },
 });
-
 
 export default books.reducer;

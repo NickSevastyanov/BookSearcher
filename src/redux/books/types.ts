@@ -2,7 +2,6 @@ export interface IBooksSliceState {
   totalItems: number;
   items: itemsInfo[];
   status: string;
-  
 }
 
 export type itemsInfo = {
@@ -25,5 +24,4 @@ export type SearchbooksParams = {
   search: string;
   category: string;
   sort: string;
-  
 };

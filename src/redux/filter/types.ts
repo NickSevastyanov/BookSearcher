@@ -1,6 +1,5 @@
 export interface IFilterSliceState {
-  searchValue: string;  
+  searchValue: string;
   category: string;
   sort: string;
-  
 }
