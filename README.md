@@ -3,7 +3,7 @@ App that provides searching for books using google api.
 Stack:
 
 - TS
-- Redux
+- RTK
 - Axios
 
 Assets:
