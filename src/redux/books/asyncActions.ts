@@ -3,7 +3,7 @@ import axios from 'axios';
 import { IBooksSliceState, SearchbooksParams } from './types';
 
 
-// const key = 'AIzaSyAF_ITjrjO9yk9l1yNS9nQTLF4zIq4KiNs'
+
 
 export const fetchbooks = createAsyncThunk<IBooksSliceState, SearchbooksParams>(
   'books/fetchbooksStatus',
